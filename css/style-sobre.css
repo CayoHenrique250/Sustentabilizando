@@ -1,0 +1,74 @@
+.titulo_sobre {
+  margin-top: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #829b3d;
+  border-radius: 20px 20px 20px 20px;
+  width: 35%;
+}
+
+.titulo_sobre h1 {
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1.5%;
+  font-size: 250%;
+  color: white;
+}
+
+.decoracao_esquerda {
+  margin-left: 15%;
+  margin-top: 5%;
+  float: left;
+  width: 10%;
+  height: 10%;
+}
+
+.decoracao_direita {
+  margin-right: 15%;
+  margin-top: -9%;
+  float: right;
+  width: 10%;
+  height: 10%;
+}
+
+.texto {
+  text-indent: 4%;
+  padding-right: 8%;
+  padding-left: 8%;
+  padding-top: 4%;
+  padding-bottom: 2%;
+  font-size: 140%;
+  background-color: rgb(219, 255, 173);
+  border-radius: 30px 30px 30px 30px;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+.t2 {
+  background-color: white;
+  padding-top: 0;
+}
+
+.folha_esquerda {
+  margin-top: 4%;
+  margin-left: 10%;
+  float: left;
+  width: 15%;
+  height: 15%;
+}
+
+.folha_direita {
+  margin-right: 11.5%;
+  margin-top: -6%;
+  float: right;
+  width: 15%;
+  height: 15%;
+}
