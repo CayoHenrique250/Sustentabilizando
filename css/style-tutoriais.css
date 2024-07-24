@@ -41,7 +41,7 @@
     margin: 5px;
     border: 1px solid #b2d3aa;
     float: left;
-    margin-left: 20px;
+    margin-left: 33px;
     margin-top: 6%;
     width: 30%;
     margin-bottom: auto;
@@ -69,7 +69,7 @@
 }
 
 .back-tut {
-    margin-top: 90%;
+    margin-top: 80%;
     opacity: 0;
 }
 
