@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <link rel="icon" type="image/png+xml" href="public/logo.png">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style-tutoriais.css">
+  <link rel="stylesheet" href="css/style-contato.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tutoriais</title>
+  <title>Contate-nos</title>
 </head>
 
 <body>
@@ -19,71 +19,60 @@
       <li><a href="index.html">Início</a></li>
       <li><a href="sobre.html">Sobre</a></li>
       <li><a href="portal.html">Portal</a></li>
-      <li><a class="active" href="tutoriais.html">Tutoriais</a></li>
-      <li><a href="contato.html">Contate-nos</a></li>
+      <li><a href="tutoriais.html">Tutoriais</a></li>
+      <li><a class="active" href="contato.html">Contate-nos</a></li>
     </ul>
   </nav>
 
-  <div class="container-tutoriais">
-    <hr style="opacity: 0;">
-    <h1>Tutoriais</h1>
-  </div>
-  <img class="logo-tutoriais" src="img/tutoriais/logo-tutoriais.png" alt="Logo tutoriais">
+  <hr class="hr-top" id="sustentabilidade">
+  <h1 class="titulo">Formulário para contato</h1>
+  <hr class="hr-bottom">
 
-  <div class="gallerys">
+  <div class="form-container">
+    <form id="contactForm">
 
-    <div>
-      <div class="gallery">
-        <a href="tutoriais/tutorial1.html">
-          <img class="tut-img" src="img/tutoriais/capas/tartaruga.jpg">
-          <div class="desc">Tartaruga com Garrafa Pet</div>
-        </a>
-      </div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Informe seu nome completo" required>
 
-      <div class="gallery">
-        <a href="tutoriais/tutorial2.html">
-          <img class="tut-img" src="img/tutoriais/capas/foguete.jpg">
-          <div class="desc">Foguetes de Garrafa Pet</div>
-        </a>
-      </div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Informe seu email para contato" required>
 
-      <div class="gallery">
-        <a href="tutoriais/tutorial3.html">
-          <img class="tut-img" src="img/tutoriais/capas/porco-espinho.png">
-          <div class="desc">Porco-espinho de papelão</div>
-      </div>
-      </a>
-    </div>
+      <label for="message">Mensagem</label>
+      <textarea id="message" name="message" rows="5" placeholder="Escreva aqui a sua mensagem" required></textarea>
 
-    <div>
-      <div class="gallery">
-        <a href="tutoriais/tutorial4.html">
-          <img class="tut-img" src="img/tutoriais/capas/velha.jpg">
-          <div class="desc">Jogo da velha</div>
-        </a>
-      </div>
-    </div>
-
-    <div class="gallery">
-      <a href="tutoriais/tutorial5.html">
-        <img class="tut-img" src="img/tutoriais/capas/memoria.jpg">
-        <div class="desc">Jogo da memória</div>
-    </div>
-    </a>
+      <button onclick="enviar()" type="submit">ENVIAR</button>
+    </form>
   </div>
 
-  <div>
-    <div class="gallery">
-      <a href="tutoriais/tutorial6.html">
-        <img class="tut-img" src="img/tutoriais/capas/arvore.jpg">
-        <div class="desc">Cartazes do dia da árvore</div>
-      </a>
+  <div id="thankYouMessage" class="thank-you-overlay">
+    <div class="thank-you-content">
+      <span id="closeThankYou" class="close-thank-you">&times;</span>
+      <h2>Obrigado!</h2>
+      <p>Sua mensagem foi enviada com sucesso.</p>
     </div>
   </div>
 
+  <div class="container">
+
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5560.977847101335!2d-36.63544474518765!3d-9.748683375738185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x705d5a26696e665%3A0x8c850bed9f271d22!2sInstituto%20Federal%20de%20Alagoas%2C%20Campus%20Arapiraca!5e0!3m2!1spt-BR!2sbr!4v1724349935532!5m2!1spt-BR!2sbr"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
+    </div>
+
+    <div class="info-container">
+      <h3>LOCALIZAÇÃO</h3>
+      <p><b>Endereço:</b> Rodovia estadual AL-110, 359, bairro Deputado Nezinho, Arapiraca.</p>
+      <p><b>CEP:</b> 57.317</p>
+      <p><b>Tel:</b> (82) 2126-6200</p>
+      <a href="https://www.google.com/maps/place/Instituto+Federal+de+Alagoas,+Campus+Arapiraca/@-9.7486834,-36.6354447,15z/data=!3m1!4b1!4m6!3m5!1s0x705d5a26696e665:0x8c850bed9f271d22!8m2!3d-9.7486834!4d-36.6354447!16s%2Fg%2F11b_3kl4cd"
+        target="_blank">Ver no Google Maps</a>
+    </div>
   </div>
 
-  <hr class="back-tut">
+  <script src="js/scripts.js"></script>
 
   <footer>
     <div class="footer">
@@ -137,9 +126,10 @@
         </div>
       </div>
       <div class="logo-footer-div">
-        <img class="logo-footer" alt="Git Mundo" src="img/mundo.gif" />
+        <img class="logo-footer" alt="Git Mundo" src="img/mundo.gif">
         <div class="copyright">
           <p>© 2024 Copyright all rights reserved</p>
+          <br>
         </div>
       </div>
     </div>
