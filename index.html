@@ -13,8 +13,39 @@
 <body>
   <nav>
     <a href="index.html">
-      <img class="logo" src="img/logo-transparente.png" alt="Logo do site Sustentabilizando">
+      <img class="logo" id="logo" src="img/logo-transparente.png" alt="Logo do site Sustentabilizando">
     </a>
+
+    <div id="toolbar" class="hidden">
+
+      <div class="ball-green"></div>
+
+      <div>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+          <div class="moon">
+            <img src="img/lua.png">
+          </div>
+          <div class="sun">
+            <img src="img/sol.png">
+          </div>
+          <div class="ball"></div>
+        </label>
+      </div>
+
+      <div id="aumentarTexto" class="mm text mais">
+        <img src="img/A+.png" alt="Aumentar texto">
+      </div>
+      <div id="diminuirTexto" class="mm text menos">
+        <img src="img/A-.png" alt="Aumentar texto">
+      </div>
+    </div>
+
+    <div id="toggleButton">
+      <div class="barra-ferramentas"></div>
+      <img class="down" src="img/down.png" alt="icone para mostrar mais ferramentas">
+    </div>
+
     <ul>
       <li><a class="active" href="index.html">Início</a></li>
       <li><a href="sobre.html">Sobre</a></li>
@@ -25,9 +56,33 @@
   </nav>
 
   <div class="slideshow-container">
-    <img class="img_tam" src="img/home/slideshow/back1.jpg"
-      alt="Imagem de uma mão dentro de algumas plantas de pequeno porte.">
-  </div>
+    <div class="mySlides fade">
+        <img class="img_tam" src="img/home/slideshow/back1.jpg">
+    </div>
+
+    <div class="mySlides fade">
+        <img class="img_tam" src="img/home/slideshow/back2.jpg">
+    </div>
+
+    <div class="mySlides fade">
+        <img class="img_tam" src="img/home/slideshow/back3.jpg">
+    </div>
+
+    <div class="mySlides fade">
+        <img class="img_tam" src="img/home/slideshow/back4.jpg">
+    </div>
+
+    <a class="prev" onclick="previousSlide()">&#10094;</a>
+    <a class="next" onclick="nextSlide()">&#10095;</a>
+</div>
+<br>
+
+<div class="dots">
+    <span class="dot" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
 
   <div class="navegacao">
     <ul>
@@ -37,8 +92,8 @@
     </ul>
   </div>
 
-  <div>
-    <hr class="hr-top" id="sustentabilidade">
+  <div id="sustentabilidade">
+    <hr class="hr-top">
     <h1 class="titulo">Sustentabilidade</h1>
     <hr class="hr-bottom">
     <div class="texto">
@@ -75,12 +130,12 @@
     </div>
   </div>
 
-  <div style="background-color: rgb(219, 255, 172)">
+  <div id="5r" style="background-color: rgb(219, 255, 172)">
     <br>
-    <hr class="hr-top" id="5r">
-    <h1 class="titulo">5 R's</h1>
+    <hr class="hr-top" >
+    <h1 class="titulo td">5 R's</h1>
     <hr class="hr-bottom">
-    <div class="texto">
+    <div class="texto td">
       <p>
         Os 5 R’s da sustentabilidade são ferramentas que auxiliam na
         construção de comportamentos, e tem por objetivo a diminuição da
@@ -114,9 +169,9 @@
   </div>
   <hr style="width: 100%; opacity: 0">
 
-  <div>
+  <div id="lixeiras">
     <br>
-    <hr class="hr-top" id="lixeiras">
+    <hr class="hr-top">
     <h1 class="titulo">Lixeiras</h1>
     <hr class="hr-bottom">
     <div class="texto">
@@ -207,6 +262,33 @@
       </div>
     </div>
   </footer>
+
+  <div onclick="backTop();">
+    <a href="#topo">
+      <div class="topo">
+        <img src="img/topo.png" alt="Botão de voltar ao topo">
+      </div>
+    </a>
+  </div>
+
+  <script src="js/scroll-animation.js"></script>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <script src="js/barra-ferramentas.js"></script>
+  <script src="js/dark-mode.js"></script>
+  <script src="js/tamanhoTexto.js"></script>
+  <script src="js/slideShow.js"></script>
+
 </body>
 
 </html>

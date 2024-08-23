@@ -24,6 +24,10 @@ hr {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+.dark .titulo {
+    color: #b7d888;
+}
+
 .form-container {
     width: 100%;
     max-width: 500px;
@@ -38,6 +42,10 @@ label {
     color: #394e1c;
 }
 
+.dark label {
+    color: #a8e657;
+}
+
 input,
 textarea {
     width: 100%;
@@ -46,6 +54,27 @@ textarea {
     margin-bottom: 15px;
     border: 1px solid #b7d888;
     border-radius: 5px;
+}
+
+.dark input,
+textarea {
+    color: #ffffff;
+}
+
+.dark ::-webkit-input-placeholder {
+    color: #cbdfaf;
+    font: verdana, arial, sans-serif;
+}
+
+.dark input {
+    border: 1px solid #5c7538;
+    background-color: #223507;
+
+}
+
+.dark textarea{
+    border: 1px solid #5c7538;
+    background-color: #223507;
 }
 
 button {
@@ -61,6 +90,11 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+}
+
+.dark button {
+    background-color: #9bc587;
+    color: rgb(61, 80, 36);
 }
 
 button:hover {
@@ -135,8 +169,16 @@ p {
     color: #394e1c;
 }
 
+.dark .info-container h3 {
+    color: #9bc587;
+}
+
 .info-container p {
     margin: 5px 0;
+}
+
+.dark .info-container p {
+    color: #f9fcf6;
 }
 
 .info-container a {
@@ -153,6 +195,10 @@ p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 90%;
     text-align: center;
+}
+
+.dark .info-container a {
+    background-color: #8ea86b;
 }
 
 .info-container a:hover {

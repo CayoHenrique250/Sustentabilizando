@@ -6,6 +6,10 @@ h2 {
     color: #56a124;
 }
 
+.dark h2 {
+    color: #abebb4;
+}
+
 .video-container {
     width: 50%;
     margin: 0 auto;
@@ -32,11 +36,19 @@ video {
     text-align: justify;
 }
 
+.dark .texto li {
+    color: #c2c1c1;
+}
+
 .texto h3 {
     font-size: 100%;
     color: rgb(82, 155, 23);
     margin-bottom: 2%;
     margin-top: 3%;
+}
+
+.dark .texto h3 {
+    color: #a8d6a7;
 }
 
 .texto ul {
