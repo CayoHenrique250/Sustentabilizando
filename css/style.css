@@ -19,7 +19,7 @@ nav {
 }
 
 .dark nav {
-  background: #658b41;
+  background: #c0cc7d;
 }
 
 .logo {
@@ -51,7 +51,7 @@ nav ul li a {
 }
 
 .dark nav ul li a {
-  color: #afdd72;
+  color: #6b7a32;
 }
 
 .dark li a:hover{
@@ -67,7 +67,7 @@ li a:hover {
 
 .dark li a.active,
 li a:hover {
-  background: #7ec445;
+  background: #98ac40;
   color: #ffffff;
 }
 
