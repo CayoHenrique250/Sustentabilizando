@@ -316,9 +316,9 @@ li a:hover {
   }
   
   .logo {
-    margin-top: 1%;
+    margin-top: 0%;
     margin-left: 1%;
-    height: 7%;
+    height: 6.5%;
   }
   
   nav ul {
@@ -331,7 +331,7 @@ li a:hover {
   }
   
   nav ul li a {
-    font-size: 60%;
+    font-size: 70%;
     padding: 5px 3px;
     border-radius: 4px;
   }
