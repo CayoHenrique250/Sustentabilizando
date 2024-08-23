@@ -1,12 +1,5 @@
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-}
-
-.img_tam {
-  margin-top: -1%;
-  width: 100%;
-  height: 500px;
+html {
+  scroll-behavior: smooth;
 }
 
 .navegacao ul {
@@ -14,13 +7,21 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(141, 201, 101);
+  background-color: #8dc965;
   margin-top: 5%;
+}
+
+.dark .navegacao ul {
+  background-color: #597944;
 }
 
 .navegacao li {
   float: left;
   border-right: 1px solid #65b92c;
+}
+
+.dark .navegacao li {
+  border-right: 1px solid #89a151;
 }
 
 .navegacao li:last-child {
@@ -38,6 +39,10 @@
 
 .navegacao li a:hover:not(.active) {
   background-color: #398517;
+}
+
+.dark .navegacao li a:hover:not(.active) {
+  background-color: #8aaf46;
 }
 
 hr {
@@ -64,6 +69,14 @@ hr {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+.dark .td {
+  color: #23420e;
+}
+
+.dark .titulo {
+  color: #8c9c5e;
+}
+
 .texto {
   text-indent: 4%;
   font-size: 130%;
@@ -73,6 +86,14 @@ hr {
   padding-left: 12%;
 }
 
+.dark .texto {
+  color: #ffffff;
+}
+
+.dark .td {
+  color: #23420e;
+}
+
 .img-text {
   display: block;
   margin-left: auto;
@@ -80,4 +101,102 @@ hr {
   width: 40%;
   margin-top: 5%;
   margin-bottom: 7%;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  margin-right: 0%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #4ec23fcc;
+}
+
+.dot {
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin: 0 2px;
+  background-color: #75af64;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.dot:hover {
+  background-color: #9fcead;
+}
+
+.dots {
+  margin-top: -5%;
+  position: relative;
+  text-align: center;
+}
+
+.active,
+.dot:hover.active {
+  background-color: #c6f1d3;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.img_tam {
+  margin-top: -1.2%;
+  width: 100%;
+  height: 500px;
 }

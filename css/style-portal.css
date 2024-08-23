@@ -7,11 +7,19 @@
     width: 55%;
 }
 
+.dark .titulo-portal{
+    background-color: #52743c;
+}
+
 .titulo-portal h1{
     margin-left: 15%;
     text-align: center;
     color: rgb(72, 82, 32);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dark .titulo-portal h1{
+    color: #cee6a8;
 }
 
 .img-title{
@@ -40,11 +48,19 @@
     padding-bottom: 2%;
 }
 
+.dark .div-green{
+    background-color: #639126;
+}
+
 .div-green h2{
     padding-top: 3%;
     margin-left: 5%;
     font-family: Arial, Helvetica, sans-serif;
     color: #67dd19;
+}
+
+.dark .div-green h2{
+    color: #11530f;
 }
 
 .texto{
@@ -60,6 +76,10 @@
 
 .duo{
     background-color: #72c00d;
+}
+
+.dark .duo{
+    background-color: #a7ca78;
 }
 
 .duo h2{

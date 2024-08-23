@@ -13,8 +13,39 @@
 <body>
   <nav>
     <a href="index.html">
-      <img class="logo" src="img/logo-transparente.png" alt="Logo do site Sustentabilizando">
+      <img class="logo" id="logo" src="img/logo-transparente.png" alt="Logo do site Sustentabilizando">
     </a>
+
+    <div id="toolbar" class="hidden">
+
+      <div class="ball-green"></div>
+
+      <div>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+          <div class="moon">
+            <img src="img/lua.png">
+          </div>
+          <div class="sun">
+            <img src="img/sol.png">
+          </div>
+          <div class="ball"></div>
+        </label>
+      </div>
+
+      <div id="aumentarTexto" class="mm text mais">
+        <img src="img/A+.png" alt="Aumentar texto">
+      </div>
+      <div id="diminuirTexto" class="mm text menos">
+        <img src="img/A-.png" alt="Aumentar texto">
+      </div>
+    </div>
+
+    <div id="toggleButton">
+      <div class="barra-ferramentas"></div>
+      <img class="down" src="img/down.png" alt="icone para mostrar mais ferramentas">
+    </div>
+
     <ul>
       <li><a href="index.html">Início</a></li>
       <li><a href="sobre.html">Sobre</a></li>
@@ -168,6 +199,32 @@
       </div>
     </div>
   </footer>
+
+  <div onclick="backTop();">
+    <a href="#topo">
+      <div class="topo">
+        <img src="img/topo.png" alt="Botão de voltar ao topo">
+      </div>
+    </a>
+  </div>
+
+  <script src="js/scroll-animation.js"></script>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <script src="js/barra-ferramentas.js"></script>
+  <script src="js/dark-mode.js"></script>
+  <script src="js/tamanhoTexto.js"></script>
+
 </body>
 
 </html>

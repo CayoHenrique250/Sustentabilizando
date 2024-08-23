@@ -12,6 +12,10 @@
   width: 35%;
 }
 
+.dark .titulo_sobre{
+  background-color: #738541;
+}
+
 .titulo_sobre h1 {
   text-align: center;
   margin-top: 1%;
@@ -43,7 +47,7 @@
   padding-top: 4%;
   padding-bottom: 2%;
   font-size: 140%;
-  background-color: rgb(219, 255, 173);
+  background-color: #dbffad;
   border-radius: 30px 30px 30px 30px;
   margin-top: 5%;
   margin-left: 5%;
@@ -52,9 +56,18 @@
   text-align: justify;
 }
 
+.dark .texto{
+  background-color: #829b3d;
+}
+
 .t2 {
   background-color: white;
   padding-top: 0;
+}
+
+.dark .t2{
+  color: #ffffff;
+  background-color: inherit;
 }
 
 .folha_esquerda {
