@@ -24,7 +24,7 @@ chk.addEventListener('change', () => {
 function setDarkMode(isDarkMode) {
   if (isDarkMode) {
     document.body.classList.add('dark');
-    logo.src = '../img/logo-transparente.png';
+    logo.src = '../img/logo-transparente-clara.png';
   } else {
     document.body.classList.remove('dark');
     logo.src = '../img/logo-transparente.png';
