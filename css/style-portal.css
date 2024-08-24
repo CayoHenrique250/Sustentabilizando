@@ -1,35 +1,35 @@
-.titulo-portal{
+.titulo-portal {
     padding-top: 0.01%;
     padding-bottom: 0.01%;
     margin-top: 4%;
-    background-color:rgb(191, 211, 185);
+    background-color: rgb(191, 211, 185);
     border-radius: 20px 20px 20px 20px;
     width: 55%;
 }
 
-.dark .titulo-portal{
+.dark .titulo-portal {
     background-color: #52743c;
 }
 
-.titulo-portal h1{
+.titulo-portal h1 {
     margin-left: 15%;
     text-align: center;
     color: rgb(72, 82, 32);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.dark .titulo-portal h1{
+.dark .titulo-portal h1 {
     color: #cee6a8;
 }
 
-.img-title{
+.img-title {
     position: relative;
     width: 18%;
     margin-top: -7%;
     margin-left: 1%;
 }
 
-.web img{
+.web img {
     position: relative;
     margin-top: -11%;
     margin-right: 5%;
@@ -38,7 +38,7 @@
     margin-left: auto;
 }
 
-.div-green{
+.div-green {
     margin-left: 5%;
     margin-top: 5%;
     background-color: #52743c;
@@ -48,22 +48,22 @@
     padding-bottom: 2%;
 }
 
-.dark .div-green{
+.dark .div-green {
     background-color: #639126;
 }
 
-.div-green h2{
+.div-green h2 {
     padding-top: 3%;
     margin-left: 5%;
     font-family: Arial, Helvetica, sans-serif;
     color: #67dd19;
 }
 
-.dark .div-green h2{
+.dark .div-green h2 {
     color: #11530f;
 }
 
-.texto{
+.texto {
     margin-right: 35%;
     margin-left: 8%;
     font-size: 110%;
@@ -74,19 +74,19 @@
     text-align: justify;
 }
 
-.duo{
+.duo {
     background-color: #72c00d;
 }
 
-.dark .duo{
+.dark .duo {
     background-color: #a7ca78;
 }
 
-.duo h2{
+.duo h2 {
     color: #11530f;
 }
 
-.link{
+.link {
     height: 40px;
     width: 10%;
     background-color: yellow;
@@ -99,24 +99,24 @@
     font-size: 150%;
 }
 
-.link h4{
+.link h4 {
     padding-top: 9%;
     font-size: 85%;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #000;
 }
 
-.link:hover{
+.link:hover {
     cursor: pointer;
     background-color: rgb(255, 208, 0);
-    
+
 }
 
-.link h4:hover{
+.link h4:hover {
     color: #b9240a;
 }
 
-.site{
+.site {
     height: 30%;
     width: 30%;
     display: flex;
@@ -124,7 +124,7 @@
     margin-top: -7%;
 }
 
-.site2{
+.site2 {
     height: 25%;
     width: 25%;
     display: flex;
@@ -132,10 +132,104 @@
     margin-top: -8%;
 }
 
-.site3{
+.site3 {
     height: 30%;
     width: 20%;
     display: flex;
     margin-left: 83%;
     margin-top: -5%;
+}
+
+/* Versão mobile */
+@media (max-width: 480px) {
+
+    .titulo-portal {
+        padding-top: 1.01%;
+        padding-bottom: 0.01%;
+        margin-top: 8%;
+        border-radius: 20px 20px 20px 20px;
+        width: 70%;
+    }
+
+    .titulo-portal h1 {
+        margin-left: 25%;
+        font-size: 90%;
+    }
+
+    .img-title {
+        width: 20%;
+        margin-top: -8%;
+        margin-left: 5%;
+    }
+
+    .web img {
+        margin-top: -18%;
+        margin-right: 5%;
+        width: 20%;
+    }
+
+    .div-green {
+        margin-left: 5%;
+        margin-top: 5%;
+        width: 80%;
+        height: 290px;
+        border-radius: 0px 20px 20px 0px;
+        padding-bottom: 2%;
+    }
+
+    .num{
+        height: 220px;
+    }
+
+    .num2{
+        height: 310px;
+    }
+
+    .div-green h2 {
+        padding-top: 3%;
+        margin-left: 5%;
+        font-size: 80%;
+    }
+
+    .texto {
+        margin-right: 29%;
+        margin-left: 8%;
+        font-size: 80%;
+        text-indent: 4%;
+    }
+
+    .link {
+        height: 40px;
+        width: 45%;
+        margin-top: 1%;
+        margin-right: 38%;
+        border-radius: 50px 50px 50px 50px;
+        font-size: 130%;
+    }
+
+    .link h4 {
+        padding-top: 8%;
+        font-size: 85%;
+    }
+
+    .site {
+        height: 30%;
+        width: 50%;
+        margin-left: 70%;
+        margin-top: -20%;
+    }
+
+    .site2 {
+        height: 25%;
+        width: 36%;
+        margin-left: 80%;
+        margin-top: -17%;
+    }
+
+    .site3 {
+        height: 30%;
+        width: 30%;
+        margin-left: 83%;
+        margin-top: -13%;
+    }
 }
