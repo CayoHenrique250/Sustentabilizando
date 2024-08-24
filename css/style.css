@@ -72,11 +72,11 @@ li a:hover {
 }
 
 .checkbtn {
-  font-size: 120%;
+  font-size: 150%;
   color: rgb(50, 100, 30);
   float: right;
   line-height: 90px;
-  margin-top: -2%;
+  margin-top: 0%;
   margin-right: 40px;
   cursor: pointer;
   display: none;
@@ -322,7 +322,9 @@ li a:hover {
 }
 
 
-@media (max-width: 858px) {
+/* Versão mobile */
+@media (max-width: 480px) {
+
   .checkbtn {
     display: block;
     z-index: 4;
@@ -336,11 +338,26 @@ li a:hover {
     width: 95%;
     height: 100vh;
     background: #77b141;
-    top: 12%;
+    top: 11%;
     left: -200%;
     text-align: center;
     transition: all .5s;
     z-index: 100;
+  }
+
+  .dark ul{
+    background: #292c35;
+  }
+
+  nav {
+    height: 90px;
+    width: 100%;
+  }
+
+  .logo {
+    margin-top: 0%;
+    margin-left: 5%;
+    height: 10%;
   }
 
   nav ul li {
@@ -348,17 +365,14 @@ li a:hover {
     display: block;
     margin: 20px 0;
     line-height: 100px;
-    margin-left: -12%;
+    margin-left: -16%;
 
   }
 
-  nav ul li:hover {
+  li a.active,
+  li a:hover {
     background-color: #8fca42;
     cursor: pointer;
-  }
-
-  nav ul li a {
-    font-size: 150%;
   }
 
   a:hover,
@@ -370,35 +384,12 @@ li a:hover {
   #check:checked~ul {
     left: 0;
   }
-}
 
-/* Versão mobile */
-@media (max-width: 480px) {
-
-  nav {
-    height: 90px;
-    width: 100%;
-  }
-
-  .logo {
-    margin-top: 0%;
-    margin-left: 4%;
-    height: 12%;
-  }
-
-  nav ul {
-    margin-right: 1.5%;
-    margin-top: 0.3%;
-  }
-
-  nav ul li {
-    line-height: 65px;
-  }
 
   nav ul li a {
-    font-size: 72%;
-    padding: 6px 5px;
-    border-radius: 4px;
+    font-size: 100%;
+    padding: 40px 170px;
+    border-radius: 7px;
   }
 
   .footer_left {
@@ -518,7 +509,7 @@ li a:hover {
   }
 
   #toolbar {
-    margin-top: 18%;
+    margin-top: 22%;
     width: 45%;
     height: 80px;
   }
@@ -532,7 +523,7 @@ li a:hover {
   }
 
   .barra-ferramentas {
-    margin-top: 18%;
+    margin-top: 22%;
     margin-left: -7.7%;
     width: 15%;
     height: 80px;
@@ -541,7 +532,7 @@ li a:hover {
   }
 
   .down {
-    margin-top: 25%;
+    margin-top: 29%;
     width: 6%;
   }
 }
