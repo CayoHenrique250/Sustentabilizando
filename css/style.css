@@ -54,7 +54,7 @@ nav ul li a {
   color: #6b7a32;
 }
 
-.dark li a:hover{
+.dark li a:hover {
   color: #537041;
 }
 
@@ -69,6 +69,21 @@ li a:hover {
 li a:hover {
   background: #98ac40;
   color: #ffffff;
+}
+
+.checkbtn {
+  font-size: 120%;
+  color: rgb(50, 100, 30);
+  float: right;
+  line-height: 90px;
+  margin-top: -2%;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
 }
 
 .footer_left {
@@ -86,7 +101,7 @@ li a:hover {
 }
 
 .dark .links-footer a:hover {
-    color: #c8f1c6;
+  color: #c8f1c6;
 }
 
 .logo-footer-div {
@@ -307,64 +322,114 @@ li a:hover {
 }
 
 
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+    z-index: 4;
+  }
+
+  ul {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    position: fixed;
+    width: 95%;
+    height: 100vh;
+    background: #77b141;
+    top: 12%;
+    left: -200%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 100;
+  }
+
+  nav ul li {
+    margin-top: -10%;
+    display: block;
+    margin: 20px 0;
+    line-height: 100px;
+    margin-left: -12%;
+
+  }
+
+  nav ul li:hover {
+    background-color: #8fca42;
+    cursor: pointer;
+  }
+
+  nav ul li a {
+    font-size: 150%;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #dfffb4;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
+
 /* Versão mobile */
-@media (max-width: 480px){
-  
+@media (max-width: 480px) {
+
   nav {
-    height: 60px;
+    height: 90px;
     width: 100%;
   }
-  
+
   .logo {
     margin-top: 0%;
-    margin-left: 1%;
-    height: 6.5%;
+    margin-left: 4%;
+    height: 12%;
   }
-  
+
   nav ul {
     margin-right: 1.5%;
     margin-top: 0.3%;
   }
-  
+
   nav ul li {
     line-height: 65px;
   }
-  
+
   nav ul li a {
     font-size: 72%;
     padding: 6px 5px;
     border-radius: 4px;
   }
-  
+
   .footer_left {
     margin-left: 0;
   }
 
-  .links-footer{
+  .links-footer {
     width: 75%;
   }
-  
+
   .footer-col {
     width: 60%;
     margin-bottom: 2%;
   }
-  
+
   .links-footer a:hover {
     padding-left: 5px;
   }
-  
+
   .logo-footer-div {
     margin-left: 8%;
     margin-bottom: 5%;
     margin-top: -10%;
   }
-  
+
   .logo-footer {
     width: 45%;
     margin-left: -10%;
     margin-bottom: 15%;
   }
-  
+
   .copyright {
     margin-top: -20%;
     margin-right: -75%;
@@ -374,7 +439,7 @@ li a:hover {
   .titulo-footer {
     font-size: 80%;
   }
-  
+
   .links-footer a {
     font-size: 70%;
   }
@@ -382,19 +447,19 @@ li a:hover {
   .footer {
     margin-top: 3%;
   }
-  
+
   .row {
     margin-left: 5%;
     margin-top: 4%;
   }
-  
+
   .topo {
     bottom: 15%;
     right: 15%;
     height: 7%;
     width: 5%;
   }
-  
+
   .label {
     border-radius: 50px;
     height: 41px;
@@ -402,7 +467,7 @@ li a:hover {
     margin-left: 30%;
     margin-top: 10%;
   }
-  
+
   .label .ball {
     border-radius: 50%;
     height: 18px;
@@ -413,59 +478,59 @@ li a:hover {
     margin-left: 0;
     border: 1px solid #678f4c;
   }
-  
+
   .mm {
     height: 45px;
     width: 45px;
     border-radius: 100%;
     margin-top: 17px;
   }
-  
+
   .mm img {
     width: 77%;
     margin-top: 8%;
     border-radius: 100%;
   }
-  
+
   .mais {
     margin-left: 55%;
   }
-  
+
   .menos {
     margin-left: 85%;
   }
-  
+
   .checkbox:checked+.label .ball {
     transform: translateY(24px);
   }
-  
+
   .moon img {
     width: 16px;
     margin-top: -5px;
     margin-bottom: 13px;
     margin-left: 2px;
   }
-  
+
   .sun img {
     width: 20px;
     margin-top: 25px;
     margin-left: -20px;
   }
-  
+
   #toolbar {
     margin-top: 18%;
     width: 45%;
     height: 80px;
   }
-  
+
   .ball-green {
     margin-left: 35%;
     width: 18%;
     height: 80px;
     border-radius: 100%;
-  
+
   }
-  
+
   .barra-ferramentas {
     margin-top: 18%;
     margin-left: -7.7%;
@@ -474,7 +539,7 @@ li a:hover {
     border-radius: 100%;
     z-index: 1;
   }
-  
+
   .down {
     margin-top: 25%;
     width: 6%;
