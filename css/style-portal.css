@@ -175,14 +175,15 @@
         height: 290px;
         border-radius: 0px 20px 20px 0px;
         padding-bottom: 2%;
+        margin-bottom: 10%;
     }
 
     .num{
-        height: 220px;
+        height: 250px;
     }
 
     .num2{
-        height: 310px;
+        height: 280px;
     }
 
     .div-green h2 {
@@ -192,44 +193,44 @@
     }
 
     .texto {
-        margin-right: 29%;
+        margin-right: 10%;
         margin-left: 8%;
-        font-size: 80%;
+        font-size: 90%;
         text-indent: 4%;
     }
 
     .link {
-        height: 40px;
-        width: 45%;
+        height: 35px;
+        width: 40%;
         margin-top: 1%;
-        margin-right: 38%;
+        margin-right: 32%;
         border-radius: 50px 50px 50px 50px;
         font-size: 130%;
     }
 
     .link h4 {
         padding-top: 8%;
-        font-size: 85%;
+        font-size: 75%;
     }
 
     .site {
         height: 30%;
-        width: 50%;
+        width: 48%;
         margin-left: 70%;
         margin-top: -20%;
     }
 
     .site2 {
         height: 25%;
-        width: 36%;
+        width: 35%;
         margin-left: 80%;
-        margin-top: -17%;
+        margin-top: -15%;
     }
 
     .site3 {
         height: 30%;
         width: 30%;
-        margin-left: 83%;
+        margin-left: 80%;
         margin-top: -13%;
     }
 }
