@@ -56,8 +56,11 @@ textarea {
     border-radius: 5px;
 }
 
-.dark input,
-textarea {
+.dark input{
+    color: #ffffff;
+}
+
+.dark textarea {
     color: #ffffff;
 }
 
