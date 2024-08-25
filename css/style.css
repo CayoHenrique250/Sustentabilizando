@@ -23,7 +23,7 @@ nav {
 }
 
 .logo {
-  margin-top: 0.4%;
+  margin-top: 0;
   margin-left: 5%;
   height: 12%;
   position: absolute;
@@ -205,7 +205,7 @@ li a:hover {
   width: 26px;
   transform: scale(1.5);
   margin-left: 35%;
-  margin-top: 10%;
+  margin-top: 8%;
 }
 
 .label .ball {
@@ -267,7 +267,7 @@ li a:hover {
 }
 
 #toolbar {
-  margin-top: 6.8%;
+  margin-top: 6%;
   background-color: #c2f3b8;
   width: 17%;
   height: 91px;
@@ -296,7 +296,7 @@ li a:hover {
 }
 
 .barra-ferramentas {
-  margin-top: 6.9%;
+  margin-top: 6%;
   margin-left: -3.7%;
   background-color: #7db684;
   width: 7%;
@@ -312,7 +312,7 @@ li a:hover {
 }
 
 .down {
-  margin-top: 8.5%;
+  margin-top: 7.5%;
   display: block;
   position: fixed;
   width: 3%;
